@@ -51,7 +51,7 @@ class Category(models.Model):
     name = models.CharField(max_length=255)
     slug = models.SlugField(
         unique=True,
-        default='None',
+        default='',
         null=True,
         blank=True,
         max_length=255
